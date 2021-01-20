@@ -20,6 +20,10 @@ programa
 		 {
 		 	escreva("A sua categoria é Adultos")
 		 }
+		 senao se (idadeNadador<5)
+		 {
+		 	escreva("Infelizmente não podemos atender")
+		 }
 		 senao se (idadeNadador>=5 e idadeNadador<=7)
 		 {
 		 	escreva("A sua categoria é Infantil A")
@@ -36,6 +40,7 @@ programa
 		 {
 		 	escreva("A sua categoria é Juvenil B")
 		 }
+		 escreva("\nObrigado volte sempre!")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -43,7 +48,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 712; 
+ * @POSICAO-CURSOR = 925; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
