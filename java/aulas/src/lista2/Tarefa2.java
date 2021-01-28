@@ -57,6 +57,12 @@ public class Tarefa2
 				terceiro = y;
 			}
 		}
+		else
+		{
+			primeiro = x;
+			segundo = y;
+			terceiro = z;
+		}
 		System.out.printf("\t1º: %d\t2º: %d\t3º: %d",primeiro,segundo,terceiro);
 	}
 }
