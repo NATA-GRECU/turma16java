@@ -15,7 +15,11 @@ public class ContaPoupanca
 		
 		
 		System.out.println("BANCO G4");
+<<<<<<< HEAD
 		linha(40);
+=======
+		System.out.println("AONDE O SEU DINHEIRO TEM MAIS FORÇA!!!");
+>>>>>>> 87e89258a2c96a21ded9392484c5aee4f31886cf
 		
 		do 
 		{
@@ -38,6 +42,7 @@ public class ContaPoupanca
 			{
 				contaPoupanca();
 			}
+<<<<<<< HEAD
 			else if (opcao == '2')
 			{
 				contaCorrente();
@@ -47,6 +52,8 @@ public class ContaPoupanca
 				contaEspecial();
 			}
 			
+=======
+>>>>>>> 87e89258a2c96a21ded9392484c5aee4f31886cf
 			
 			
 		} while (true);
@@ -58,6 +65,7 @@ public class ContaPoupanca
 	public static void contaPoupanca()
 	{
 		Scanner tec = new Scanner(System.in);
+<<<<<<< HEAD
 		double saldo = 0.00;
 		char opcaoDC;
 		char opcaoSN;
@@ -308,12 +316,32 @@ public class ContaPoupanca
 				System.out.print("\nDigite o valor para débito :");
 				debito = in.nextDouble();
 				listaDebito[giro] = debito;
+=======
+		double saldo = 0.00, credito=0.00, debito=0.00;
+		char opcaoDC;
+		char opcaoSN;
+		String descricao;
+		
+		
+		System.out.println("CONTA POUPANÇA");
+		linha(40);
+		//processos
+		for (int giro=1; giro<=10; giro++)
+		{
+			System.out.printf("Lançamento %d : [D-débito/C-crédito] :",giro);
+			opcaoDC = tec.next().toUpperCase().charAt(0);
+			if (opcaoDC =='D')
+			{
+				System.out.print("\nDigite o valor para débito :");
+				debito = tec.nextDouble();
+>>>>>>> 87e89258a2c96a21ded9392484c5aee4f31886cf
 				if (saldo > 0)
 				{
 					while (saldo < debito )
 					{
 						System.out.printf("Saldo indisponivel, atual %.2f, tente de novo!!!\n",saldo);
 						System.out.print("Digite o valor para débito :");
+<<<<<<< HEAD
 						debito = in.nextDouble();
 						
 					}
@@ -321,6 +349,14 @@ public class ContaPoupanca
 					System.out.print("Descrição do débito :");
 					descricao = in.nextLine();
 					listaDescricao[giro] = descricao;
+=======
+						debito = tec.nextDouble();
+						
+					}
+					tec.nextLine();
+					System.out.print("Descrição do débito :");
+					descricao = tec.nextLine();
+>>>>>>> 87e89258a2c96a21ded9392484c5aee4f31886cf
 					saldo = saldo - debito;
 					System.out.printf("Saldo atual é R$ %.2f \n", saldo);
 				} 
@@ -332,13 +368,18 @@ public class ContaPoupanca
 			else if (opcaoDC == 'C')
 			{
 				System.out.print("\nDigite o valor do crédito: ");
+<<<<<<< HEAD
 				credito = in.nextDouble();
 				listaCredito[giro] = credito;
 
+=======
+				credito = tec.nextDouble();
+>>>>>>> 87e89258a2c96a21ded9392484c5aee4f31886cf
 				while (credito <=0 )
 				{
 					System.out.print("Valor informado negativo ou zero, tente de novo:");
 					System.out.print("Digite o valor do crédito: ");
+<<<<<<< HEAD
 					credito = in.nextDouble();
 				}
 				in.nextLine();
@@ -348,12 +389,22 @@ public class ContaPoupanca
 				saldo = saldo + credito;
 				System.out.printf("Saldo atual é R$ %.2f \n", saldo);
 			
+=======
+					credito = tec.nextDouble();
+				}
+				tec.nextLine();
+				System.out.print("Digite a descrição do crédito: ");
+				descricao = tec.nextLine();
+				saldo = saldo + credito;
+				System.out.printf("Saldo atual é R$ %.2f \n", saldo);
+>>>>>>> 87e89258a2c96a21ded9392484c5aee4f31886cf
 			}
 			else
 			{
 				System.out.println("Você não escolheu Debito ou Crédito!!!");
 			}
 			
+<<<<<<< HEAD
 			
 			System.out.print("Continua S/N :");
 			opcaoSN = in.next().toUpperCase().charAt(0);
@@ -401,11 +452,36 @@ public class ContaPoupanca
 			}
 		}
 	}
+=======
+			System.out.print("Continua S/N :");
+			opcaoSN = tec.next().toUpperCase().charAt(0);
+			if (opcaoSN == 'N')
+			{
+				break;
+			}
+		}
+		//correção monetaria
+		System.out.println("Deseja fazer a correção hoje sim ou não? ");
+		opcaoSN = tec.next().toUpperCase().charAt(0);
+		if (opcaoSN == 'S') 
+		{
+			saldo += (saldo * 0.0005);
+		}
+		System.out.printf("SALDO FINAL DA CONTA POUPANÇA %.2f \n", saldo);
+		System.out.println();
+		
+	}
+	
+>>>>>>> 87e89258a2c96a21ded9392484c5aee4f31886cf
 	public static void linha(int tamanho) 
 	{
 		for (int x=1;x<tamanho; x++)
 		{
+<<<<<<< HEAD
 			System.out.print("-");
+=======
+			System.out.print("═");
+>>>>>>> 87e89258a2c96a21ded9392484c5aee4f31886cf
 		}
 		System.out.println();
 	}

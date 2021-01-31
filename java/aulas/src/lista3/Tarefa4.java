@@ -6,6 +6,6 @@ public class Tarefa4
 	{
 		Scanner leia = new Scanner(System.in);
 		
-		char sexo = '1','2','3';
+		char sexo;
 	}
 }
