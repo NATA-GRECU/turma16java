@@ -1,4 +1,4 @@
-package lista5;
+package lista1POO;
 
 public class ClasseTarefa1
 {

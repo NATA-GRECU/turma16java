@@ -1,4 +1,4 @@
-package lista5;
+package lista1POO;
 import java.util.*;
 public class Tarefa4 
 {
