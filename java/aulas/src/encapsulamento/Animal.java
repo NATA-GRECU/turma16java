@@ -1,10 +1,10 @@
 package encapsulamento;
 
-public class Animal
+public abstract class Animal
 {
-	private String nome;
-	double peso;
-	double tamanho;
+	protected String nome;
+	protected double peso;
+	protected double tamanho;
 	
 	
 	public Animal(String nome, double peso) {
@@ -22,5 +22,31 @@ public class Animal
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+	
+	public double getPeso() {
+		return peso;
+	}
+
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+
+	public double getTamanho() {
+		return tamanho;
+	}
+
+
+	public void setTamanho(double tamanho) {
+		this.tamanho = tamanho;
+	}
+
+
+	abstract String movimentacao();
+	abstract String khHora();
+	//abstract String emitirSom();
+	//abstract String necessidadesFisiologicas();
+	
 	
 }

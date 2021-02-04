@@ -5,14 +5,17 @@ public class Conta
 	Scanner leia = new Scanner(System.in);
 	private String numero;
 	private String cpf;
-	private double saldo;
+	protected double saldo;
 	
+	
+
 	public Conta(String numero, String cpf) 
 	{
 		super();
 		this.numero = numero;
 		this.cpf = cpf;
 	}
+
 	public void debitar(double valor)
 	{
 		if (valor <= saldo)

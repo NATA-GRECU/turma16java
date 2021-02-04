@@ -2,26 +2,30 @@ package BANK16;
 
 public class ContaCorrente extends Conta
 {
-	private int qtMesTalao;
-	
-	public ContaCorrente(String numero, String cpf)
+	public int qtMesTalao;
+
+	public ContaCorrente(String numero, String cpf, int qtMesTalao) 
 	{
 		super(numero, cpf);
+		this.qtMesTalao = qtMesTalao;
 	}
-	
-	public void emitirTalao(int qtde)
+
+	public int getQtMesTalao() 
 	{
-		if(qtde > 3)
-		{
-			System.out.println("Você nao pode emitir mais que 3 talões por mês");
-		}
-	}
-	public int getQtMesTalao() {
 		return qtMesTalao;
 	}
 
-	public void setQtMesTalao(int qtMesTalao) {
+	public void setQtMesTalao(int qtMesTalao) 
+	{
 		this.qtMesTalao = qtMesTalao;
+	}
+	public void emitirTalao(int qtde)
+	{
+		while(qtde > 3)
+		{
+			System.out.println("Você só pode imprimir 3 talões por mês.");
+			
+		}
 	}
 	
 }
