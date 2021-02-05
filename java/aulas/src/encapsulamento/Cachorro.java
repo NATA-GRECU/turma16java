@@ -1,6 +1,6 @@
 package encapsulamento;
 
-public class Cachorro extends Animal implements AnimalInterface
+public class Cachorro extends Animal 
 {
 	String raca;
 
@@ -24,18 +24,6 @@ public class Cachorro extends Animal implements AnimalInterface
 	String movimentacao()
 	{
 		return "estou correndo";
-	}
-	@Override
-	
-	String emitirSom() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public
-	String necessidadesFisiologicas() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 	@Override
 	String khHora() {

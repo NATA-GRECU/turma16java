@@ -2,7 +2,14 @@ package encapsulamento;
 
 public class  AnimalInterface 
 {
-	public String emitirSom();
-		
-	public String necessidadesFisiologicas();
+	 public String emitirSom() 
+	 {
+		return null;
+	}
+
+
+	public String necessidadesFisiologicas()
+	{
+		return	null;
+	}
 }

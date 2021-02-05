@@ -45,8 +45,6 @@ public abstract class Animal
 
 	abstract String movimentacao();
 	abstract String khHora();
-	//abstract String emitirSom();
-	//abstract String necessidadesFisiologicas();
 	
 	
 }
