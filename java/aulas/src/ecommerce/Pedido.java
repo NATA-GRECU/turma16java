@@ -72,10 +72,10 @@ public class Pedido {
 		System.out.println("——————————————————————— WEB LOJA PC QUASE FERA ———————————————————————");
 		System.out.println("\t—————————————————————————————————————————————————————————");
 		System.out.println("Montariamos o melhor computador do mercado se vendessemos peças o suficiente\n");
-		System.out.println("\n------------------------------------------------------------------------------\n");
+		System.out.println("\n------------------------------------------------------------------------------");
 		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy | HH:mm:ss");
 		Date date = new Date();
-		System.out.println("CNPJ: 40028922/0001-01            "+dateFormat.format(date));
+		System.out.println("CNPJ: 40028922/0001-01                          "+dateFormat.format(date));
 		System.out.println("------------------------------------------------------------------------------");
 	}
 	public double getPrecoTotal() {
